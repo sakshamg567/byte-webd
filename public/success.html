@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Route - Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+        header {
+            background-color: transparent;
+            padding: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .nav-links li {
+            margin-left: 1rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .github-link:hover {
+            color:gray  ;
+        }
+        .github-link:active {
+            color:lightblue  ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My App</div>
+            <ul class="nav-links">
+                <li class="github-link" onclick="window.location.href='https://github.com/sakshamg567/byte-webdev-private.git'">Github Link</li>
+                <li>Dashboard</li>
+                <li>Profile</li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the private route!</h1>
+    </main>
+</body>
+</html>

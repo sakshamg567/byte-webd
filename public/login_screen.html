@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Y.T.E webdev-task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .sign-in-placeholder {
+            color: white;
+            font-family: Inter;
+        } /*constant*/
+
+        .welcome-message,.login-to-continue-message,.or-choice {
+            color: white;
+        }  /*Constant*/
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            width: 1fr;
+            align-items: center;
+            margin-top: 55px;
+        }
+
+        .welcome-message {
+            font-family: Inter;
+            font-weight: 500;
+        } /*Constant*/
+
+        .login-to-continue-message{
+            font-family: Inter;
+            color: gray;
+        } /*Constant*/
+
+        .or-choice {
+            font-family: Inter;
+            color: gray;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .login-with-google , .login-with-github {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-style: solid;
+            border-color: gray;
+            background-color: rgba(128, 128, 128, 0.205);
+            color: white;
+
+            font-family: Inter;
+            font-weight: 500;
+            transition: box-shadow 0.15s ease-in-out;
+        }
+
+        .google-logo,.github-logo {
+            height: 70%;
+            mix-blend-mode: lighten;
+        }
+
+        .github-logo {
+            height: 60%;
+        }
+
+        .blurred-overlay-red-line {
+            background-color: red;
+            z-index: -1;
+            width: 375px;
+            height: 25px;
+            transform: rotate(-69deg);
+            position: relative;
+            bottom: 8rem;
+            color: red;
+            font-size: xx-small;
+            filter: blur(80px);
+        }
+
+        .login-with-github:hover {
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.305);
+            box-shadow: 0 0 10px rgb(255, 175, 175);
+        }
+
+        .login-with-google:hover {
+            cursor: pointer;
+            background-color: rgba(128, 128, 128, 0.305);
+            box-shadow: 0 0 10px rgb(255, 175, 175); 
+        }
+
+        @media (max-width:1920px){
+            .welcome-message {
+                font-size: 3.7rem;
+            }
+            .login-to-continue-message {
+                margin-top: -2rem;
+                margin-bottom: 35px;
+                font-size: 1.1rem;
+            }
+            .login-with-google , .login-with-github{
+                height: 3.4rem;
+                width: 18rem;
+                border-radius: 1rem;
+            }
+            .sign-in-placeholder {
+                font-size: 1.1rem;
+                margin-right: 18px;
+            }
+        }
+
+        @media (max-width:700px){
+            .welcome-message {
+                font-size: 2rem;
+            }
+            .login-to-continue-message {
+                margin-top: 0rem;
+                margin-bottom: 35px;
+                font-size: 0.9rem;
+            }
+            .login-with-google , .login-with-github{
+                height: 3rem;
+                width: 15rem;
+                border-radius: 1rem;
+            }
+            .sign-in-placeholder {
+                font-size: 0.9rem;
+            }
+        }
+
+    </style>
+    <div class="main-content">
+        <h1 class="welcome-message">Welcome to B.Y.T.E</h1>
+        <p class="login-to-continue-message">Please Login to Continue</p>
+        <button id="login-with-google" class="login-with-google" onclick="window.location.href='/confirmation'">
+            <img class="google-logo" src="https://imgs.search.brave.com/25CDFRL-XL98MkrJ5Ygp1xz8aihLY7HmtSc2L0Twf6Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mcmVl/bG9nb3BuZy5jb20v/aW1hZ2VzL2FsbF9p/bWcvMTY1Nzk1NTQ0/N2dvb2dsZS1sb2dv/LWJsYWNrLWFuZC13/aGl0ZS5wbmc" alt="">
+            <p class="sign-in-placeholder">Sign in with Google</p>
+        </button>
+        <p class="or-choice">or</p>
+        <button id="login-with-github" class="login-with-github" onclick="window.location.href='/auth/github'">
+            <img class='github-logo' src="https://imgs.search.brave.com/w5LFW4ei3PC6DUOkw2jcpG1OVDzoYhDqENlECFBWUg8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzI0L0dpdGh1Yl9s/b2dvX3N2Zy5zdmc" alt="">
+            <p class="sign-in-placeholder">Sign in with Github</p>
+        </button>
+
+        <div class="blurred-overlay-red-line">Lorem ipsum dolor sit amet consectetur Ratione, voluptas.</div>
+    </div>
+
+</body>
+</html>

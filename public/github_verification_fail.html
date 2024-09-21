@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Verification Failed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <body>
+
+        <style>
+            body {
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .main-content {
+                display: flex;
+                flex-direction: column;
+                width: 1fr;
+                align-items: center;
+                margin-top: 200px;
+                border-style: solid;
+                border-color: gray;
+                height: 300px;
+                width: 450px;
+                border-radius: 20px;
+                padding: 20px;
+                align-items: center;
+                justify-content: center;
+                backdrop-filter: blur(10px);
+                background-color: rgba(128, 128, 128, 0.137);
+                border-width: 1px;
+
+            }
+
+            .welcome-message {
+                color: white;
+                font-family: Inter;
+                font-weight: 500;
+            }
+
+            .verification-instructions {
+                color: gray;
+                font-family: Inter;
+            }
+
+            .login-with-github {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                border-style: solid;
+                border-color: gray;
+                background-color: rgba(128, 128, 128, 0.205);
+                color: white;
+
+                font-family: Inter;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            .login-with-github:hover {
+                background-color: rgba(128, 128, 128, 0.305);
+            }
+
+            .github-logo {
+                height: 60%;
+                mix-blend-mode: lighten;
+                margin-right: 10px;
+            }
+
+            .blurred-overlay-red-line {
+                background-color: red;
+                z-index: -1;
+                width: 375px;
+                height: 75px;
+                transform: rotate(-69deg);
+                position: relative;
+                bottom: 8rem;
+                color: red;
+                font-size: xx-small;
+                filter: blur(70px);
+
+            }
+
+            .back-to-login {
+                color: gray;
+                font-family: Inter;
+                margin-top: 60px;
+                cursor: pointer;
+            }
+
+            .back-to-login:hover {
+                color: white;
+            }
+
+            @media (max-width:1920px){
+                .welcome-message {
+                    font-size: 2.3rem;
+                }
+                .login-to-continue-message {
+                    margin-top: -2rem;
+                    margin-bottom: 35px;
+                    font-size: 0.7rem;
+                }
+                .verification-instructions {
+                    font-size: 0.8rem;
+                    margin-bottom: 2.2rem;
+                    margin-top: -0.9rem;
+                    line-height: 1.2rem;
+
+                }
+                .login-with-google , .login-with-github{
+                    height: 3.4rem;
+                    width: 18rem;
+                    border-radius: 1rem;
+                }
+                .sign-in-placeholder {
+                    font-size: 1.1rem;
+                    margin-right: 18px;
+                }
+            }
+
+            @media (max-width:700px){
+                .welcome-message {
+                    font-size: 1.5rem;
+                }
+                .login-to-continue-message {
+                    margin-top: 0rem;
+                    margin-bottom: 35px;
+                    font-size: 0.9rem;
+                }
+                .login-with-google , .login-with-github{
+                    height: 3rem;
+                    width: 15rem;
+                    border-radius: 1rem;
+                }
+                .sign-in-placeholder {
+                    font-size: 0.9rem;
+                }
+            }
+
+        </style>
+
+        <div class="main-content">
+            <h1 class="welcome-message">Github Verification Failed</h1>
+            <div class="verification-instructions">Please Follow BYTE's Github for accesing the page</div>
+            <button id="login-with-github" class="login-with-github" onclick="window.location.href='https://github.com/bytemait'">
+    <link rel="stylesheet" href="failed.css">
+                <img class='github-logo' src="https://imgs.search.brave.com/w5LFW4ei3PC6DUOkw2jcpG1OVDzoYhDqENlECFBWUg8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzI0L0dpdGh1Yl9s/b2dvX3N2Zy5zdmc" alt="">
+                <p class="sign-in-placeholder">Follow B.Y.T.E on Github</p>
+            </button>
+            <p class="back-to-login" onclick="window.location.href='/'">
+                Back to Login
+            </p>
+    
+            <div class="blurred-overlay-red-line">Lorem ipsum dolor sit amet consectetur Ratione, voluptas.</div>
+        </div>
+    </body>
+</head>
+<body>
+    
+</body>
+</html>
